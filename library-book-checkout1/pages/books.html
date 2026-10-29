@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'; style-src 'self' 'unsafe-inline'; img-src 'self' data:; font-src 'self'; connect-src 'self'; object-src 'none'; base-uri 'self'; form-action 'self'">
+    <meta name="referrer" content="no-referrer">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Books - Library System</title>
+
+    <link rel="stylesheet" href="../style.css">
+
+</head>
+
+<body>
+
+    <!-- ========================================
+         LOGIN CHECK
+         ======================================== -->
+
+    <script src="../js/security.js" data-guard></script>
+
+
+    <!-- ========================================
+         HEADER
+         ======================================== -->
+
+    <header>
+
+        <div class="header-content">
+
+            <h1>
+                Library Book Checkout System
+            </h1>
+
+            <p>
+                Book Management
+            </p>
+
+        </div>
+
+    </header>
+
+
+    <!-- ========================================
+         NAVIGATION
+         ======================================== -->
+
+    <nav>
+
+        <a href="../index.html">
+            Dashboard
+        </a>
+
+        <a href="books.html" class="active">
+            Books
+        </a>
+
+        <a href="checkout.html">
+            Checkout
+        </a>
+
+        <a href="return.html">
+            Return
+        </a>
+
+        <a href="users.html">
+            Users
+        </a>
+
+        <button
+            type="button"
+            id="logoutButton">
+            Logout
+        </button>
+
+    </nav>
+
+
+    <!-- ========================================
+         MAIN CONTENT
+         ======================================== -->
+
+    <main class="container">
+
+
+        <!-- ========================================
+             WELCOME SECTION
+             ======================================== -->
+
+        <section class="welcome">
+
+            <h2>
+                Books
+            </h2>
+
+            <p>
+                View and search available library books.
+            </p>
+
+        </section>
+
+
+        <!-- ========================================
+             SEARCH BOOK
+             ======================================== -->
+
+        <section class="search-box">
+
+            <input
+                type="text"
+                id="searchBook"
+                placeholder="Search by title or author..."
+            >
+
+        </section>
+
+
+        <!-- ========================================
+             BOOK TABLE
+             ======================================== -->
+
+        <section class="dashboard-section">
+
+            <table>
+
+                <thead>
+
+                    <tr>
+
+                        <th>
+                            ID
+                        </th>
+
+                        <th>
+                            Title
+                        </th>
+
+                        <th>
+                            Author
+                        </th>
+
+                        <th>
+                            ISBN
+                        </th>
+
+                        <th>
+                            Status
+                        </th>
+
+                    </tr>
+
+                </thead>
+
+
+                <tbody id="bookTable">
+
+                </tbody>
+
+            </table>
+
+        </section>
+
+
+    </main>
+
+
+    <!-- ========================================
+         FOOTER
+         ======================================== -->
+
+    <footer>
+
+        <p>
+            Library Book Checkout System &copy; 2026
+        </p>
+
+    </footer>
+
+
+    <!-- ========================================
+         BOOK JAVASCRIPT
+         ======================================== -->
+
+    <script src="../js/books.js"></script>
+
+</body>
+
+</html>

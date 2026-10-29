@@ -1,0 +1,78 @@
+PHASE 5 – BEFORE AND AFTER SECURITY COMPARISON
+
+Introduction
+
+The current prototype is designed to demonstrate basic library operations. The secure redesign addresses the security weaknesses identified during the STRIDE threat analysis.
+
+
+Current Prototype
+
+1. No strong user authentication
+
+2. No role-based authorization
+
+3. Data is stored using browser localStorage
+
+4. Client-side validation is primarily used
+
+5. No centralized database
+
+6. No secure audit trail
+
+7. No encryption mechanism for stored prototype data
+
+8. Users can potentially inspect client-side data
+
+9. Important operations are controlled by client-side JavaScript
+
+
+Secure Redesign
+
+1. User authentication is implemented.
+
+2. Role-based access control is implemented.
+
+3. Important records are stored in a centralized database.
+
+4. Server-side validation is implemented.
+
+5. Input sanitization is applied.
+
+6. HTTPS is used to protect data in transit.
+
+7. Sensitive stored information is protected using appropriate encryption.
+
+8. Audit logging records important system activities.
+
+9. Secure session management is implemented.
+
+10. Server-side authorization prevents unauthorized operations.
+
+
+Before and After Comparison
+
+Current Prototype:
+Browser → JavaScript → localStorage
+
+Secure Redesign:
+User → Authentication → Authorization → Web Application → Server-Side Validation → Database
+
+
+Threats Mitigated
+
+Spoofing is reduced through authentication.
+
+Tampering is reduced through server-side validation and centralized database controls.
+
+Repudiation is reduced through audit logging.
+
+Information Disclosure is reduced through access control and encryption.
+
+Denial of Service is reduced through server-side availability controls, monitoring, and request management.
+
+Elevation of Privilege is reduced through role-based access control and server-side authorization.
+
+
+Conclusion
+
+The secure redesign provides stronger protection than the current prototype by moving important security controls from the client side to the server side. The redesign protects the confidentiality, integrity, and availability of library information while also improving accountability and access control.

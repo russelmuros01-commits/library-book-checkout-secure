@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'; style-src 'self' 'unsafe-inline'; img-src 'self' data:; font-src 'self'; connect-src 'self'; object-src 'none'; base-uri 'self'; form-action 'self'">
+    <meta name="referrer" content="no-referrer">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Checkout - Library System</title>
+
+    <link rel="stylesheet" href="../style.css">
+
+</head>
+
+<body>
+
+    <!-- ========================================
+         LOGIN CHECK
+         ======================================== -->
+
+    <script src="../js/security.js" data-guard></script>
+
+
+    <!-- ========================================
+         HEADER
+         ======================================== -->
+
+    <header>
+
+        <div class="header-content">
+
+            <h1>
+                Library Book Checkout System
+            </h1>
+
+            <p>
+                Book Checkout
+            </p>
+
+        </div>
+
+    </header>
+
+
+    <!-- ========================================
+         NAVIGATION
+         ======================================== -->
+
+    <nav>
+
+        <a href="../index.html">
+            Dashboard
+        </a>
+
+        <a href="books.html">
+            Books
+        </a>
+
+        <a href="checkout.html" class="active">
+            Checkout
+        </a>
+
+        <a href="return.html">
+            Return
+        </a>
+
+        <a href="users.html">
+            Users
+        </a>
+
+        <button
+            type="button"
+            id="logoutButton">
+            Logout
+        </button>
+
+    </nav>
+
+
+    <!-- ========================================
+         MAIN CONTENT
+         ======================================== -->
+
+    <main class="container">
+
+
+        <!-- ========================================
+             WELCOME SECTION
+             ======================================== -->
+
+        <section class="welcome">
+
+            <h2>
+                Checkout Book
+            </h2>
+
+            <p>
+                Borrow an available book.
+            </p>
+
+        </section>
+
+
+        <!-- ========================================
+             CHECKOUT FORM
+             ======================================== -->
+
+        <section class="form-container">
+
+            <form id="checkoutForm">
+
+
+                <!-- Select User -->
+
+                <div class="form-group">
+
+                    <label for="userSelect">
+                        Select User
+                    </label>
+
+                    <select
+                        id="userSelect"
+                        required>
+
+                        <option value="">
+                            -- Select User --
+                        </option>
+
+                    </select>
+
+                </div>
+
+
+                <!-- Select Book -->
+
+                <div class="form-group">
+
+                    <label for="bookSelect">
+                        Select Book
+                    </label>
+
+                    <select
+                        id="bookSelect"
+                        required>
+
+                        <option value="">
+                            -- Select Book --
+                        </option>
+
+                    </select>
+
+                </div>
+
+
+                <!-- Checkout Date -->
+
+                <div class="form-group">
+
+                    <label for="checkoutDate">
+                        Checkout Date
+                    </label>
+
+                    <input
+                        type="date"
+                        id="checkoutDate"
+                        required>
+
+                </div>
+
+
+                <!-- Due Date -->
+
+                <div class="form-group">
+
+                    <label for="dueDate">
+                        Due Date
+                    </label>
+
+                    <input
+                        type="date"
+                        id="dueDate"
+                        required>
+
+                </div>
+
+
+                <!-- Checkout Button -->
+
+                <button
+                    type="submit"
+                    class="checkout-button">
+
+                    Checkout Book
+
+                </button>
+
+            </form>
+
+        </section>
+
+
+        <!-- ========================================
+             CURRENT CHECKOUTS
+             ======================================== -->
+
+        <section class="dashboard-section">
+
+            <h2>
+                Current Checkouts
+            </h2>
+
+            <table>
+
+                <thead>
+
+                    <tr>
+
+                        <th>
+                            Book
+                        </th>
+
+                        <th>
+                            User
+                        </th>
+
+                        <th>
+                            Checkout Date
+                        </th>
+
+                        <th>
+                            Due Date
+                        </th>
+
+                    </tr>
+
+                </thead>
+
+
+                <tbody id="checkoutTable">
+
+                </tbody>
+
+            </table>
+
+        </section>
+
+
+    </main>
+
+
+    <!-- ========================================
+         FOOTER
+         ======================================== -->
+
+    <footer>
+
+        <p>
+            Library Book Checkout System &copy; 2026
+        </p>
+
+    </footer>
+
+
+    <!-- ========================================
+         CHECKOUT JAVASCRIPT
+         ======================================== -->
+
+    <script src="../js/checkout.js"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,37 @@
+PHASE 2 – TECHNOLOGY CHOICES
+
+HTML
+
+HTML is used to create the structure and content of the Library Book Checkout System. It is used for pages such as the Dashboard, Books, Checkout, Return, and Users pages.
+
+
+CSS
+
+CSS is used to design and style the user interface. It controls the layout, colors, spacing, tables, buttons, forms, and responsive appearance of the system.
+
+
+JavaScript
+
+JavaScript is used to provide the functionality of the Library Book Checkout System. It handles book checkout, book return, user information, book availability, and other system interactions.
+
+
+localStorage
+
+Browser localStorage is used as the data storage mechanism for the prototype. It allows the system to save books, users, and checkout information within the browser.
+
+
+Visual Studio Code
+
+Visual Studio Code is used as the development environment for creating and editing the project files.
+
+
+Live Server
+
+Live Server is used to run the HTML-based prototype locally during development and testing.
+
+
+Technology Limitation
+
+The current prototype is a client-side application and does not use a centralized backend database. Because of this, the stored localStorage data is limited to the browser where the application is being used.
+
+For a production system, a backend server and centralized database would be recommended together with appropriate authentication, authorization, validation, encryption, and logging controls.

@@ -1,0 +1,30 @@
+[
+    {
+        "id": 1,
+        "title": "Introduction to Programming",
+        "author": "John Smith",
+        "isbn": "9781234567890",
+        "available": true
+    },
+    {
+        "id": 2,
+        "title": "Database Management Systems",
+        "author": "Jane Williams",
+        "isbn": "9781234567891",
+        "available": true
+    },
+    {
+        "id": 3,
+        "title": "Information Security",
+        "author": "Robert Brown",
+        "isbn": "9781234567892",
+        "available": false
+    },
+    {
+        "id": 4,
+        "title": "Web Development Fundamentals",
+        "author": "Michael Johnson",
+        "isbn": "9781234567893",
+        "available": true
+    }
+]

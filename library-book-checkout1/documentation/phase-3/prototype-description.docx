@@ -1,0 +1,43 @@
+PHASE 3 – WORKING PROTOTYPE
+
+Prototype Overview
+
+The Library Book Checkout System is a simplified web-based prototype developed using HTML, CSS, and JavaScript. It demonstrates the basic functions needed to manage library books, users, and checkout transactions.
+
+The prototype focuses on the core functionality of viewing books, checking out books, returning books, managing users, and monitoring checkout records.
+
+
+Implemented Features
+
+1. Dashboard
+
+The Dashboard provides an overview of the library system and displays summary information and recent checkout activities.
+
+2. Books
+
+The Books page displays the available library books and their current status. Books can be identified as available or borrowed.
+
+3. Checkout
+
+The Checkout page allows a user to select a library user and an available book. The system records the checkout date and due date.
+
+4. Return
+
+The Return page displays borrowed books and provides an option to return a book. After a successful return, the book status is changed back to available.
+
+5. Users
+
+The Users page displays the registered library users and their basic information.
+
+6. Local Data Storage
+
+The prototype uses browser localStorage to preserve books, users, and checkout information during use.
+
+
+Prototype Limitations
+
+The current prototype is designed for demonstration purposes. It does not currently include a backend server, centralized database, strong authentication, authorization, encryption, or server-side validation.
+
+Because localStorage is used, the data is stored locally in the browser. Data changes made in one browser are not automatically shared with other computers or devices.
+
+These limitations will be considered during the threat modeling and secure redesign phases.

@@ -1,0 +1,61 @@
+PHASE 1 – ASSETS AND CIA PRIORITIES
+
+Assets to Protect
+
+The following assets are important to the Library Book Checkout System:
+
+1. Book Information
+
+Book information includes book titles, authors, identification information, and availability status. Incorrect or unauthorized changes to this information may affect the accuracy of the library records.
+
+2. User Information
+
+User information includes the names and email addresses of registered library users. This information should be protected from unauthorized access or disclosure.
+
+3. Checkout Records
+
+Checkout records contain information about borrowed books, users, checkout dates, and due dates. These records must remain accurate to properly track library transactions.
+
+4. System Data
+
+The system data stored in the browser includes books, users, and checkout information. Unauthorized modification or deletion of this data may affect the operation of the prototype.
+
+5. System Availability
+
+The availability of the Library Book Checkout System is important because users and library staff need access to the system to view books and process transactions.
+
+
+Confidentiality
+
+Confidentiality refers to protecting information from unauthorized access or disclosure.
+
+For this system, confidentiality is important because user information and checkout records should only be accessible to authorized users.
+
+
+Integrity
+
+Integrity refers to maintaining the accuracy and reliability of information.
+
+Integrity is highly important for the Library Book Checkout System because incorrect book availability, user information, or checkout records can result in inaccurate library transactions.
+
+
+Availability
+
+Availability refers to ensuring that the system and its information are accessible when needed.
+
+Availability is important because the library staff and users need to access the system when checking books, processing checkouts, and returning books.
+
+
+CIA Priority
+
+The priority of the CIA triad for this system is:
+
+1. Integrity – High
+2. Confidentiality – High
+3. Availability – Medium
+
+Integrity has a high priority because inaccurate or modified checkout and book records can directly affect the operation of the library system.
+
+Confidentiality also has a high priority because the system contains user information and transaction records that should not be exposed to unauthorized individuals.
+
+Availability has a medium priority because the system needs to be accessible for normal library operations, but temporary unavailability would not permanently expose or modify the stored information.

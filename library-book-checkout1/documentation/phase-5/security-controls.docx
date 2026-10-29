@@ -1,0 +1,105 @@
+PHASE 5 – SECURITY CONTROLS
+
+Introduction
+
+The secure redesign improves the security of the Library Book Checkout System by addressing the threats identified during the STRIDE analysis.
+
+
+1. Authentication
+
+Users should be required to authenticate before accessing protected functions of the system.
+
+Authentication ensures that the system can verify the identity of a user before granting access.
+
+
+2. Password Hashing and Salting
+
+Passwords should never be stored as plain text.
+
+A secure password hashing algorithm should be used together with salting to protect user passwords if the database is compromised.
+
+
+3. Authorization
+
+The system should determine what actions each user is allowed to perform.
+
+For example, library staff may be allowed to manage books and users, while regular users should have limited access.
+
+
+4. Role-Based Access Control
+
+The system should use roles to control access to sensitive functions.
+
+Possible roles include:
+
+Library Staff
+
+Library staff can manage books, users, checkouts, and returns.
+
+Library User
+
+Library users should have limited access to book and transaction functions.
+
+
+5. Input Validation
+
+All user input should be validated before it is processed.
+
+Validation should check that required fields are completed and that submitted information follows the expected format.
+
+
+6. Input Sanitization
+
+Input should be sanitized to reduce the risk of malicious or unexpected content being processed by the application.
+
+
+7. Encryption in Transit
+
+The secure system should use HTTPS to protect information while it travels between the user's browser and the server.
+
+This helps prevent unauthorized individuals from intercepting sensitive information.
+
+
+8. Encryption at Rest
+
+Sensitive information stored in the database should be protected using appropriate encryption mechanisms.
+
+This provides additional protection if unauthorized individuals gain access to stored data.
+
+
+9. Server-Side Validation
+
+Important validation should be performed on the server instead of relying only on client-side JavaScript.
+
+This prevents users from bypassing security checks by modifying browser-side code.
+
+
+10. Audit Logging
+
+The system should maintain audit logs for important actions.
+
+Examples include:
+
+- User login
+- Book checkout
+- Book return
+- Book information changes
+- User information changes
+- Administrative actions
+
+Audit logs can help investigate suspicious activity and resolve transaction disputes.
+
+
+11. Secure Session Management
+
+Authenticated sessions should be securely managed. Sessions should expire after an appropriate period of inactivity and should not expose sensitive session information.
+
+
+12. Secure Database
+
+The secure redesign should replace browser localStorage for important system records with a centralized database controlled by the backend application.
+
+
+Expected Security Improvement
+
+These controls reduce the risks identified during the STRIDE analysis by improving authentication, authorization, data integrity, confidentiality, accountability, and system availability.

@@ -1,0 +1,66 @@
+PHASE 3 – DEMO INSTRUCTIONS
+
+Step 1 – Open the Project
+
+Open the library-book-checkout project folder using Visual Studio Code.
+
+
+Step 2 – Run the System
+
+Open the index.html file and select "Open with Live Server."
+
+
+Step 3 – Open the Dashboard
+
+The Library Book Checkout System will open in the browser and display the Dashboard.
+
+
+Step 4 – View Books
+
+Navigate to the Books page to view the list of books and their current availability.
+
+
+Step 5 – Checkout a Book
+
+Go to the Checkout page.
+
+Select a library user.
+
+Select an available book.
+
+Enter or confirm the checkout date and due date.
+
+Complete the checkout transaction.
+
+
+Step 6 – Verify the Checkout
+
+Check the current checkout records and verify that the selected book is now marked as borrowed.
+
+
+Step 7 – Return a Book
+
+Go to the Return page.
+
+Find the borrowed book.
+
+Click the Return button.
+
+Confirm that the return transaction is successful.
+
+
+Step 8 – Verify Book Availability
+
+Go back to the Books page.
+
+Verify that the returned book is now marked as available.
+
+
+Step 9 – View Users
+
+Go to the Users page to view the registered library users.
+
+
+Expected Result
+
+The system should successfully display books and users, record book checkouts, process book returns, update book availability, and preserve prototype data using browser localStorage.

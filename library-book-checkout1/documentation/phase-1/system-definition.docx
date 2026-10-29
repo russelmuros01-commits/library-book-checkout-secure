@@ -1,0 +1,58 @@
+PHASE 1 – SYSTEM DEFINITION
+
+System Name
+
+Library Book Checkout System
+
+
+Purpose and Goals
+
+The Library Book Checkout System is a simple web-based system designed to help manage library books, users, and book checkout transactions. The system allows users to view available books, record book checkouts, process returned books, and monitor book availability.
+
+The main goal of the system is to provide a simple and organized way to manage library book transactions. It aims to reduce errors in tracking borrowed and returned books and make it easier to monitor the current status of library books.
+
+
+Intended Users
+
+The intended users of the Library Book Checkout System are library staff and library users.
+
+Library staff can use the system to manage books, monitor checkout transactions, process returned books, and manage user information.
+
+Library users can use the system to view available books and participate in the book checkout and return process.
+
+
+3–5 Key Features
+
+1. Book Management
+
+The system allows users to view the list of library books and check whether each book is available or currently borrowed.
+
+2. Book Checkout
+
+The system allows a library user to check out an available book and records the checkout information.
+
+3. Book Return
+
+The system allows borrowed books to be returned and updates the book status from borrowed to available.
+
+4. User Management
+
+The system displays and manages basic information about registered library users.
+
+5. Checkout Records
+
+The system keeps track of current checkout information, including the user, book, checkout date, and due date.
+
+
+Scope: Included
+
+The system includes the management and viewing of library books, checking out available books, returning borrowed books, managing basic library user information, monitoring book availability, and viewing checkout records.
+
+The prototype uses HTML, CSS, and JavaScript and stores its data using browser localStorage.
+
+
+Scope: Excluded
+
+The system does not include online payments, book purchasing, online book reservations, email notifications, SMS notifications, integration with external library systems, or a centralized online database.
+
+The prototype also does not include advanced authentication, role-based access control, encryption, or server-side security controls. These security improvements will be considered in the secure redesign and threat modeling phases.

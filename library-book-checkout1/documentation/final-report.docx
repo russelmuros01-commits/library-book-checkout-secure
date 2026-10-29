@@ -1,0 +1,81 @@
+LIBRARY BOOK CHECKOUT SYSTEM
+
+ITC 303 – Information Security 1
+
+MIDTERM PROJECT
+
+
+Submitted by:
+
+[Names of Group Members]
+
+
+Submitted to:
+
+[Instructor's Name]
+
+
+Date:
+
+September 2026
+
+
+
+TABLE OF CONTENTS
+
+
+1. PHASE 1 – SYSTEM DEFINITION
+
+1.1 System Name
+1.2 Purpose and Goals
+1.3 Intended Users
+1.4 Key Features
+1.5 Scope
+1.6 Assets to Protect
+1.7 CIA Priorities
+
+
+2. PHASE 2 – ARCHITECTURE AND DATA FLOW
+
+2.1 System Architecture
+2.2 DFD Level 0
+2.3 DFD Level 1
+2.4 Trust Boundaries
+2.5 System Assumptions
+2.6 Technology Choices
+2.7 Sensitive Data Entry and Exit
+
+
+3. PHASE 3 – WORKING PROTOTYPE
+
+3.1 Prototype Overview
+3.2 Implemented Features
+3.3 Prototype Limitations
+3.4 Demonstration Instructions
+
+
+4. PHASE 4 – STRIDE THREAT MODEL
+
+4.1 STRIDE Overview
+4.2 Spoofing
+4.3 Tampering
+4.4 Repudiation
+4.5 Information Disclosure
+4.6 Denial of Service
+4.7 Elevation of Privilege
+4.8 STRIDE Threat Summary
+
+
+5. PHASE 5 – SECURE REDESIGN
+
+5.1 Secure Architecture
+5.2 Secure DFD
+5.3 Security Controls
+5.4 Before and After Comparison
+5.5 Threat Mitigation
+
+
+6. CONCLUSION
+
+
+7. REFERENCES

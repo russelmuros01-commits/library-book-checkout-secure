@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'; style-src 'self' 'unsafe-inline'; img-src 'self' data:; font-src 'self'; connect-src 'self'; object-src 'none'; base-uri 'self'; form-action 'self'">
+    <meta name="referrer" content="no-referrer">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Create Account - Library Book Checkout System</title>
+
+    <link rel="stylesheet" href="../style.css">
+</head>
+
+<body>
+
+    <header>
+        <div class="header-content">
+            <h1>Library Book Checkout System</h1>
+            <p>Simple Library Management System</p>
+        </div>
+    </header>
+
+
+    <main class="container">
+
+        <section class="login-section">
+
+            <div class="login-card">
+
+                <h2>Create Account</h2>
+
+                <p class="login-description">
+                    Create your account to access the Library Book Checkout System.
+                </p>
+
+
+                <form id="registerForm" novalidate>
+
+                        <div class="form-group">
+                        <label for="name">Full Name</label>
+                        <input
+                            type="text"
+                            id="name"
+                            name="name"
+                            placeholder="Enter your full name"
+                            maxlength="60"
+                            autocomplete="name"
+                            autocapitalize="words"
+                            spellcheck="false"
+                            required
+                        >
+                        <small class="field-hint">Letters and spaces only. No numbers or special characters.</small>
+                        <span id="nameError" class="field-error" role="alert"></span>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="email">Email</label>
+                        <input
+                            type="email"
+                            id="email"
+                            name="email"
+                            placeholder="Enter your email"
+                            maxlength="254"
+                            autocomplete="email"
+                            required
+                        >
+                    </div>
+
+                    <div class="form-group">
+                        <label for="password">Password</label>
+                        <input
+                            type="password"
+                            id="password"
+                            name="password"
+                            placeholder="Create a password"
+                            maxlength="8"
+                            autocomplete="new-password"
+                            required
+                        >
+                        <ul id="passwordRules" class="password-rules">
+                            <li data-rule="length">Exactly 8 characters (letters, numbers and symbols combined)</li>
+                            <li data-rule="number">At least 1 number</li>
+                            <li data-rule="special">At least 1 special character (! @ # $ % &amp; *)</li>
+                        </ul>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="confirmPassword">Confirm Password</label>
+                        <input
+                            type="password"
+                            id="confirmPassword"
+                            name="confirmPassword"
+                            placeholder="Confirm your password"
+                            maxlength="8"
+                            autocomplete="new-password"
+                            required
+                        >
+                    </div>
+
+                    <div id="registerMessage" class="login-message" role="alert"></div>
+
+                    <button type="submit" class="login-button">
+                        Create Account
+                    </button>
+
+                </form>
+
+
+                <!-- SHOWN ONCE, AFTER THE ACCOUNT IS CREATED -->
+
+                <div id="recoveryBox" class="recovery-box" hidden>
+
+                    <h3>Account created!</h3>
+
+                                        <p class="login-description">
+                        Save your <strong>recovery code</strong>. It is shown only once
+                        and is the only way to reset a forgotten password.
+                    </p>
+
+                    <p class="login-description">
+                        <strong>Note:</strong> Only <strong>one (1) recovery code</strong>
+                        is given per account. You will need it if you forget your password
+                        and want to use Forgot Password. It cannot be shown again, so
+                        copy or write it down before you continue.
+                    </p>
+
+                    <div id="recoveryCode" class="recovery-code"></div>
+
+                    <button type="button" id="copyRecoveryButton" class="login-button secondary">
+                        Copy code
+                    </button>
+
+                    <button type="button" id="downloadRecoveryButton" class="login-button secondary">
+                        Download code (.txt)
+                    </button>
+
+                    <label class="recovery-confirm">
+                        <input type="checkbox" id="recoverySaved">
+                        I have saved my recovery code
+                    </label>
+
+                    <button type="button" id="continueToLogin" class="login-button" disabled>
+                        Continue to Login
+                    </button>
+
+                </div>
+
+
+                <p class="login-description" style="margin-top: 20px; margin-bottom: 0;">
+                    Already have an account?
+                    <a href="login.html">Login here</a>
+                </p>
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+    <footer>
+        <p>Library Book Checkout System &copy; 2026</p>
+    </footer>
+
+
+    <script src="../js/security.js"></script>
+    <script src="../js/register.js"></script>
+
+</body>
+
+</html>

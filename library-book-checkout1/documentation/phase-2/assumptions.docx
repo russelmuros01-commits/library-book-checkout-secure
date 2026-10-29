@@ -1,0 +1,49 @@
+PHASE 2 – SYSTEM ASSUMPTIONS
+
+Assumptions
+
+1. The system is accessed through a modern web browser.
+
+2. The prototype is developed and tested using Visual Studio Code.
+
+3. Live Server is used to run the prototype during development and demonstration.
+
+4. The prototype uses HTML, CSS, and JavaScript.
+
+5. The prototype uses browser localStorage to store books, users, and checkout information.
+
+6. The prototype is intended for demonstration and academic purposes.
+
+7. Users are assumed to have access to the computer or device where the system is running.
+
+8. The prototype does not currently use a centralized server or database.
+
+9. The prototype does not currently implement strong authentication or authorization.
+
+10. Security controls will be proposed and analyzed during the threat modeling and secure redesign phases.
+
+
+Sensitive Data Entry
+
+The system may receive or handle the following information:
+
+1. User names
+2. User email addresses
+3. Book information
+4. Checkout information
+5. Checkout dates
+6. Due dates
+7. Book availability status
+
+
+Sensitive Data Exit
+
+Information displayed by the system includes:
+
+1. User information
+2. Book information
+3. Book availability
+4. Checkout records
+5. Return status
+
+The system should prevent unauthorized users from accessing information that is not intended for them.

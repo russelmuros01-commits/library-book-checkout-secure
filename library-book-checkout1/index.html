@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'; style-src 'self' 'unsafe-inline'; img-src 'self' data:; font-src 'self'; connect-src 'self'; object-src 'none'; base-uri 'self'; form-action 'self'">
+    <meta name="referrer" content="no-referrer">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Library Book Checkout System</title>
+
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+    <!-- ========================================
+         LOGIN CHECK
+         ======================================== -->
+
+    <script src="js/security.js" data-guard></script>
+
+
+    <!-- ========================================
+         HEADER
+         ======================================== -->
+
+    <header>
+
+        <div class="header-content">
+
+            <h1>
+                Library Book Checkout System
+            </h1>
+
+            <p>
+                Simple Library Management System
+            </p>
+
+        </div>
+
+    </header>
+
+
+    <!-- ========================================
+         NAVIGATION
+         ======================================== -->
+
+    <nav>
+
+        <a href="index.html" class="active">
+            Dashboard
+        </a>
+
+        <a href="pages/books.html">
+            Books
+        </a>
+
+        <a href="pages/checkout.html">
+            Checkout
+        </a>
+
+        <a href="pages/return.html">
+            Return
+        </a>
+
+        <a href="pages/users.html">
+            Users
+        </a>
+
+        <button
+            type="button"
+            id="logoutButton">
+            Logout
+        </button>
+
+    </nav>
+
+
+    <!-- ========================================
+         MAIN CONTENT
+         ======================================== -->
+
+    <main class="container">
+
+
+        <!-- ========================================
+             WELCOME SECTION
+             ======================================== -->
+
+        <section class="welcome">
+
+            <h2>
+                Library Dashboard
+            </h2>
+
+            <p>
+                Welcome to the Library Book Checkout System.
+            </p>
+
+        </section>
+
+
+        <!-- ========================================
+             SUMMARY CARDS
+             ======================================== -->
+
+        <section class="summary-cards">
+
+
+            <!-- Total Books -->
+
+            <div class="card">
+
+                <h3>
+                    Total Books
+                </h3>
+
+                <p id="totalBooks">
+                    0
+                </p>
+
+            </div>
+
+
+            <!-- Available Books -->
+
+            <div class="card">
+
+                <h3>
+                    Available Books
+                </h3>
+
+                <p id="availableBooks">
+                    0
+                </p>
+
+            </div>
+
+
+            <!-- Borrowed Books -->
+
+            <div class="card">
+
+                <h3>
+                    Borrowed Books
+                </h3>
+
+                <p id="borrowedBooks">
+                    0
+                </p>
+
+            </div>
+
+
+            <!-- Total Users -->
+
+            <div class="card">
+
+                <h3>
+                    Total Users
+                </h3>
+
+                <p id="totalUsers">
+                    0
+                </p>
+
+            </div>
+
+
+        </section>
+
+
+        <!-- ========================================
+             RECENT CHECKOUTS
+             ======================================== -->
+
+        <section class="dashboard-section">
+
+            <h2>
+                Recent Checkouts
+            </h2>
+
+
+            <table>
+
+                <thead>
+
+                    <tr>
+
+                        <th>
+                            Book
+                        </th>
+
+                        <th>
+                            User
+                        </th>
+
+                        <th>
+                            Checkout Date
+                        </th>
+
+                        <th>
+                            Due Date
+                        </th>
+
+                    </tr>
+
+                </thead>
+
+
+                <tbody id="recentCheckouts">
+
+                </tbody>
+
+            </table>
+
+        </section>
+
+
+    </main>
+
+
+    <!-- ========================================
+         FOOTER
+         ======================================== -->
+
+    <footer>
+
+        <p>
+            Library Book Checkout System &copy; 2026
+        </p>
+
+    </footer>
+
+
+    <!-- ========================================
+         MAIN JAVASCRIPT
+         ======================================== -->
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>

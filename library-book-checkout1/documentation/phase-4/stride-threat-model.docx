@@ -1,0 +1,210 @@
+PHASE 4 – STRIDE THREAT MODEL
+
+Introduction
+
+STRIDE is used to identify potential security threats in the Library Book Checkout System. The analysis considers six threat categories: Spoofing, Tampering, Repudiation, Information Disclosure, Denial of Service, and Elevation of Privilege.
+
+
+1. SPOOFING
+
+Threat Scenario
+
+An unauthorized person may pretend to be a legitimate library user and access or use the library system.
+
+Vulnerable Component/Data Flow
+
+User access and the client-side application.
+
+Impact
+
+Unauthorized access may allow a person to perform actions or view information without proper authorization.
+
+Likelihood
+
+Medium
+
+Risk Level
+
+High
+
+Possible Harm
+
+Unauthorized users may access user information, modify transactions, or perform actions as another user.
+
+Security Fix
+
+Implement user authentication using secure passwords with password hashing and salting. Sessions should also be securely managed.
+
+
+2. TAMPERING
+
+Threat Scenario
+
+A user may modify information stored in browser localStorage using browser developer tools.
+
+Vulnerable Component/Data Flow
+
+Browser localStorage and client-side JavaScript.
+
+Impact
+
+Modified data may result in incorrect book availability, user information, or checkout records.
+
+Likelihood
+
+High
+
+Risk Level
+
+High
+
+Possible Harm
+
+Books may incorrectly appear available or borrowed, and checkout records may be manipulated.
+
+Security Fix
+
+Move important data processing and validation to a backend server. Use server-side validation and a centralized database to prevent users from directly controlling important records.
+
+
+3. REPUDIATION
+
+Threat Scenario
+
+A user may deny performing a checkout or return transaction because the current prototype does not maintain a secure audit trail.
+
+Vulnerable Component/Data Flow
+
+Checkout and return transactions.
+
+Impact
+
+The system may not have enough evidence to determine who performed a specific transaction.
+
+Likelihood
+
+Medium
+
+Risk Level
+
+Medium
+
+Possible Harm
+
+Disputes involving checkout and return records may be difficult to investigate.
+
+Security Fix
+
+Implement audit logging that records important transactions, including the user, action, date, and time.
+
+
+4. INFORMATION DISCLOSURE
+
+Threat Scenario
+
+User information and checkout records may be viewed by an unauthorized person who has access to the browser or system.
+
+Vulnerable Component/Data Flow
+
+User information and localStorage.
+
+Impact
+
+Personal or transaction information may be exposed.
+
+Likelihood
+
+Medium
+
+Risk Level
+
+Medium
+
+Possible Harm
+
+Unauthorized individuals may obtain user names, email addresses, and checkout information.
+
+Security Fix
+
+Implement authentication and authorization, restrict access to sensitive information, and use appropriate encryption for sensitive data.
+
+
+5. DENIAL OF SERVICE
+
+Threat Scenario
+
+The library system may become unavailable because of excessive requests, malicious activity, or problems affecting the application.
+
+Vulnerable Component/Data Flow
+
+Web application and server infrastructure.
+
+Impact
+
+Users may temporarily lose access to the library system.
+
+Likelihood
+
+Low
+
+Risk Level
+
+Medium
+
+Possible Harm
+
+Library staff may be unable to process checkouts or returns while the system is unavailable.
+
+Security Fix
+
+For a production system, use server-side availability controls, request limits, error handling, monitoring, and backup mechanisms.
+
+
+6. ELEVATION OF PRIVILEGE
+
+Threat Scenario
+
+A normal user may attempt to gain access to functions intended only for authorized library staff.
+
+Vulnerable Component/Data Flow
+
+User access and system functions.
+
+Impact
+
+An unauthorized user may gain control over administrative functions.
+
+Likelihood
+
+Medium
+
+Risk Level
+
+High
+
+Possible Harm
+
+A user could modify books, users, or transaction records without authorization.
+
+Security Fix
+
+Implement role-based access control and enforce authorization on the server. User permissions should be checked before allowing sensitive operations.
+
+
+STRIDE SUMMARY
+
+Spoofing – High
+Tampering – High
+Repudiation – Medium
+Information Disclosure – Medium
+Denial of Service – Medium
+Elevation of Privilege – High
+
+
+Overall Threat Assessment
+
+The most significant risks in the current prototype are tampering, spoofing, and elevation of privilege. These risks are mainly caused by the client-side architecture and the lack of authentication, authorization, and server-side validation.
+
+The use of browser localStorage also creates a risk because users with access to the browser can potentially inspect or modify stored data.
+
+The identified threats will be addressed in the secure redesign through authentication, authorization, input validation, secure data storage, encryption, and audit logging.
